@@ -168,9 +168,10 @@
     </div>
     <script>
         function app() {
+            const items = ["+90kg", "-90kg", "+70kg", "-70kg", "+60kg"]
             return {
                 // 要素が3つ以上ある前提             
-                names: ["+90kg", "-90kg", "+70kg", "-70kg", "+60kg"],
+                names:items ,
                 name: "",
                 sCount: 0,
                 positionX: 0,
@@ -199,7 +200,7 @@
                             setTimeout(() => {
                                 this.isSelected = true
                                 this.isDisabled = false
-                            }, 1000)
+                            }, 500)
                         }
                     } else {
                         this.move()
